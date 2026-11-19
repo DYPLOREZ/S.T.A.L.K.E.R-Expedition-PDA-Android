@@ -1,0 +1,19 @@
+:root{--bg:#090f0b;--panel:#111b13;--line:#344a35;--green:#8bc68b;--muted:#9aa997;--amber:#c4a66a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1a2a1c,#080d09 65%);color:#d5dfd1;font:14px Arial,sans-serif}
+header{padding:18px 16px 13px;border-bottom:1px solid var(--line);background:#0b120d}.eyebrow,.sub,footer{font-size:10px;letter-spacing:1.5px;color:#8ca58b}
+h1{font-size:25px;letter-spacing:2px;margin:7px 0 3px;color:#dce8d8}h1 span{color:#83b87e}
+nav{display:flex;gap:7px;overflow:auto;padding:10px 12px;border-bottom:1px solid var(--line)}
+button{background:#17231a;color:#c7d6c3;border:1px solid #405641;border-radius:4px;padding:9px 11px;white-space:nowrap}
+nav button.selected{background:#29432b;border-color:#80ad79;color:#e4f3df}
+main{padding:12px;max-width:900px;margin:auto}.tab{display:none}.tab.active{display:block}
+.map-head{display:flex;justify-content:space-between;padding:11px;border:1px solid var(--line);background:#0e1710;color:#9bb197;font-size:10px;letter-spacing:1.3px}
+.map-frame{height:68vh;min-height:440px;border:1px solid var(--line);border-top:0;background:#101a13}.map-frame iframe{width:100%;height:100%;border:0;background:#101a13}
+h2{font-size:17px;letter-spacing:1px;color:#dce8d8}.hint,.meta{color:#91a28e;font-size:12px;line-height:1.5}
+.source,.warning,.pin-card{border:1px solid var(--line);background:#111b13;padding:12px;border-radius:5px;margin:10px 0;line-height:1.5}
+.source a{color:#a7d3a0;text-decoration:underline;display:inline-block;margin-top:5px}
+.warning{border-color:#665536;background:#211b10;color:#c1a875;font-size:12px}
+.form{display:grid;gap:8px;margin:12px 0}input,select,textarea{width:100%;background:#0d160f;border:1px solid #405641;border-radius:4px;color:#e3eee0;padding:11px;font:14px Arial}
+textarea{min-height:85px;resize:vertical}.form button{background:#29432b;border-color:#80ad79}
+.pin-row{display:flex;align-items:center;gap:9px}.pin-dot{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}.pin-dot.grey{background:#858585}.pin-dot.green{background:#168b48}.kind{margin-left:auto;color:#9cb197;font-size:11px}.pin-card button{margin-top:8px}.pin-content{margin-top:10px;padding-top:10px;border-top:1px solid #344a35;white-space:pre-wrap;color:#d5dfd1}
+.stats{padding:12px;color:#a7d3a0;border-top:1px solid var(--line);margin-top:12px}
+footer{text-align:center;padding:16px 10px;border-top:1px solid var(--line);margin-top:18px;font-size:9px}

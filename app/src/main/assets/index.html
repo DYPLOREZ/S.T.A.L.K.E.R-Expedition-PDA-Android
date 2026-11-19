@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Expedition PDA</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="eyebrow">ЗОНА ОТЧУЖДЕНИЯ · ПЕРСОНАЛЬНЫЙ КПК</div><h1>EXPEDITION <span>PDA</span></h1><div class="sub">ANOMALY · EXPEDITION 2.3</div></header>
+<nav id="tabs"><button class="selected" data-tab="community">КАРТА ЗОНЫ</button><button data-tab="stashes">ТАЙНИКИ</button><button data-tab="anomalies">АНОМАЛИИ</button><button data-tab="notes">МОИ МЕТКИ</button></nav>
+<main>
+<section id="community" class="tab active">
+  <div class="map-head"><span>ИНТЕРАКТИВНАЯ КАРТА СООБЩЕСТВА</span><span>ОНЛАЙН</span></div>
+  <div class="map-frame"><iframe title="Карта Зоны" src="https://stalker-anomaly-gamma.fandom.com/wiki/Map:Chernobyl_Exclusion_Zone_(Colour)" loading="lazy"></iframe></div>
+  <p class="hint">Карта сообщества: базы, торговцы, техники, медики, лаборатории и переходы. Состав объектов и соответствие Expedition 2.3 не гарантированы.</p>
+  <div class="source"><b>Карта тайников Anomaly с отмеченными схронами</b><br><a href="https://www.reddit.com/r/stalker/comments/mgmnyn/complete_1920x4894_map_of_stalker_anomaly_with/">Открыть карту 3840 × 9788 и варианты без значков</a></div>
+</section>
+<section id="stashes" class="tab">
+  <h2>ТАЙНИКИ ANOMALY</h2>
+  <p>На опубликованной карте сообщества отмечены расположения схронов. Нажатие на значки в этой картинке не связано с локальным прогрессом приложения — для этого используйте «Мои метки».</p>
+  <div class="source"><b>Полная карта со схронами</b><br><a href="https://www.reddit.com/r/stalker/comments/mgmnyn/complete_1920x4894_map_of_stalker_anomaly_with/">Открыть карту с иконками тайников</a></div>
+  <div class="source"><b>Русское руководство по тайникам</b><br><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2290875867&l=russian">Открыть тайники по локациям</a></div>
+  <div class="warning">Важно: в Anomaly содержимое обычных тайников генерируется случайно. Карта показывает места, но не гарантирует конкретный набор предметов. Тайники, полученные по наводке, содержат лут. Поэтому фиксированный список предметов для каждого схрона был бы недостоверным.</div>
+</section>
+<section id="anomalies" class="tab">
+  <h2>АНОМАЛЬНЫЕ ПОЛЯ</h2>
+  <p>В открытых источниках не нашлась проверенная полная карта всех полей аномалий для Anomaly 1.5.2 / Expedition 2.3. Автор карты схронов отдельно отмечает, что поля аномалий не отображались в отладочной карте и их пришлось бы вручную отмечать в игре.</p>
+  <div class="source"><b>Карта объектов и локаций сообщества</b><br><a href="https://stalker-anomaly-gamma.fandom.com/wiki/Map:Chernobyl_Exclusion_Zone_(Colour)">Открыть интерактивную карту</a></div>
+  <div class="hint">В этой версии не добавлены выдуманные координаты аномалий. Можно сохранять собственные найденные поля в разделе «Мои метки».</div>
+</section>
+<section id="notes" class="tab">
+  <h2>МОИ МЕТКИ КПК</h2>
+  <p class="hint">Добавляй найденные тайники и аномальные поля вручную. Серые метки становятся зелёными после открытия карточки и просмотра содержимого. Записи сохраняются на устройстве.</p>
+  <div class="form">
+    <input id="newName" placeholder="Название (например, Тайник у моста)">
+    <select id="newType"><option value="Тайник">Тайник</option><option value="Аномалия">Аномалия</option><option value="Другое">Другое</option></select>
+    <input id="newLoc" placeholder="Локация (например, Кордон)">
+    <textarea id="newContents" placeholder="Содержимое / описание / координаты"></textarea>
+    <button id="add">Добавить метку</button>
+  </div>
+  <div id="myPins"></div>
+  <div class="stats" id="stats"></div>
+</section>
+</main>
+<footer>OFFLINE NOTES · COMMUNITY MAP REQUIRES INTERNET</footer>
+<script src="app.js"></script></body></html>
